@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "./dark-mode.css";
+
+
+/* BackGround Color
+========================= */
+
+/* 🌿 Base Styles */
+body {
+  @apply min-h-screen bg-gradient-to-br from-slate-200 via-blue-100 to-indigo-200;
+}
+
+:is(html.dark) body {
+  background: #0f172a !important;
+  background-image: none !important;
+  background-color: #0f172a !important;
+  color: #e2e8f0 !important;
+}
+
+:is(html.dark) h1,
+:is(html.dark) h2,
+:is(html.dark) h3,
+:is(html.dark) h4,
+:is(html.dark) h5,
+:is(html.dark) h6 {
+  color: #f1f5f9 !important;
+}
+
+:is(html.dark) p,
+:is(html.dark) label,
+:is(html.dark) li {
+  color: #cbd5e1 !important;
+}

@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import "./admin-dark-mode.css";
+
+body {
+  @apply min-h-screen bg-gradient-to-br from-slate-200 via-blue-100 to-indigo-200;
+}
+
+:is(html.dark) body {
+  background: #0f172a !important;
+  background-image: none !important;
+}
+

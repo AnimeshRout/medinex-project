@@ -1,0 +1,398 @@
+/* =========================================================
+   MEDINEX — DARK MODE
+   ========================================================= */
+
+/* ── 1. ROOT / BODY ──────────────────────────────────────── */
+html.dark,
+html.dark body {
+  background-color: #0f172a !important;
+  color: #e2e8f0 !important;
+  color-scheme: dark;
+}
+
+/* ── 2. SCROLLBAR ────────────────────────────────────────── */
+html.dark ::-webkit-scrollbar-track { background: #1e293b; }
+html.dark ::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
+html.dark ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+/* ── 3. TAILWIND BG OVERRIDES ───────────────────────────── */
+html.dark .bg-white {
+  background-color: #1e293b !important;
+}
+html.dark .bg-white\/97,
+html.dark .bg-white\/95,
+html.dark .bg-white\/90 {
+  background-color: rgba(30, 41, 59, 0.97) !important;
+}
+html.dark .bg-gray-50 { background-color: #1e293b !important; }
+html.dark .bg-gray-100 { background-color: #1e293b !important; }
+html.dark .bg-gray-200 { background-color: #334155 !important; }
+html.dark .bg-gray-300 { background-color: #334155 !important; }
+html.dark .bg-gray-200\/60 {
+  background-color: rgba(15, 23, 42, 0.85) !important;
+  backdrop-filter: blur(20px) !important;
+}
+
+/* ── 4. TEXT OVERRIDES ───────────────────────────────────── */
+html.dark .text-gray-900 { color: #f1f5f9 !important; }
+html.dark .text-gray-800 { color: #e2e8f0 !important; }
+html.dark .text-gray-700 { color: #cbd5e1 !important; }
+html.dark .text-gray-600 { color: #94a3b8 !important; }
+html.dark .text-gray-500 { color: #64748b !important; }
+html.dark .text-gray-400 { color: #475569 !important; }
+html.dark .text-indigo-600 { color: #818cf8 !important; }
+html.dark .text-indigo-700 { color: #818cf8 !important; }
+html.dark .text-indigo-500 { color: #818cf8 !important; }
+
+/* ── 5. BORDER OVERRIDES ─────────────────────────────────── */
+html.dark .border-gray-100 { border-color: #334155 !important; }
+html.dark .border-gray-200 { border-color: #334155 !important; }
+html.dark .border-gray-300 { border-color: #475569 !important; }
+html.dark .border-gray-400 { border-color: #475569 !important; }
+html.dark .border-gray-500 { border-color: #475569 !important; }
+html.dark .border-gray-600 { border-color: #475569 !important; }
+
+/* ── 6. NAVBAR ───────────────────────────────────────────── */
+html.dark header.sticky {
+  background-color: rgba(15, 23, 42, 0.9) !important;
+  border-bottom-color: rgba(71, 85, 105, 0.5) !important;
+}
+html.dark header a { color: #cbd5e1; }
+html.dark header .text-gray-700 { color: #cbd5e1 !important; }
+html.dark .hover\:bg-indigo-100\/60:hover { background-color: rgba(55, 48, 163, 0.25) !important; }
+html.dark .bg-indigo-100 { background-color: rgba(55, 48, 163, 0.25) !important; }
+html.dark .hover\:bg-indigo-200\/60:hover { background-color: rgba(49, 46, 129, 0.25) !important; }
+html.dark .bg-indigo-200 { background-color: rgba(49, 46, 129, 0.3) !important; }
+html.dark .bg-white\/95.backdrop-blur-xl,
+html.dark .bg-white\/97.backdrop-blur-xl {
+  background-color: rgba(30, 41, 59, 0.98) !important;
+  border-color: #475569 !important;
+}
+html.dark .fixed.bg-white\/97 { background-color: rgba(15, 23, 42, 0.99) !important; }
+html.dark .border-b.border-gray-600 { border-color: #334155 !important; }
+html.dark .h-px.bg-gray-500 { background-color: #334155 !important; }
+html.dark .bg-gray-200.border { background-color: #1e293b !important; }
+
+/* Restore navbar active indicator */
+:is(html.dark) header span { color: inherit !important; }
+:is(html.dark) header a span span { color: inherit !important; }
+:is(html.dark) header nav a.text-indigo-600 { color: #818cf8 !important; }
+
+/* ── 7. FOOTER COPYRIGHT BAR ─────────────────────────────── */
+html.dark .border-t.border-gray-200.bg-white {
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
+}
+html.dark .text-gray-700.text-center { color: #94a3b8 !important; }
+
+/* ── 8. DOCTOR CARDS ─────────────────────────────────────── */
+html.dark .rounded-2xl.bg-white,
+html.dark .bg-white.rounded-2xl {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+}
+html.dark .rounded-2xl.border.border-gray-100,
+html.dark .rounded-2xl.border.border-gray-200 {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+}
+html.dark .border-t.border-gray-50 { border-color: #334155 !important; }
+html.dark .border-t.border-gray-100 { border-color: #334155 !important; }
+html.dark .border-t.border-gray-300 { border-color: #475569 !important; }
+html.dark .bg-indigo-50 { background-color: #1e293b !important; }
+
+/* ── 9. FILTER PANEL (Doctors page) ─────────────────────── */
+html.dark .bg-white.rounded-2xl.p-4 { background-color: #1e293b !important; }
+html.dark .hover\:bg-indigo-100:hover { background-color: rgba(55, 48, 163, 0.2) !important; }
+
+/* Active filter badge */
+html.dark .bg-indigo-200 {
+  background-color: rgba(67, 56, 202, 0.35) !important;
+}
+
+/* ── 10. APPOINTMENT PAGE ────────────────────────────────── */
+html.dark .bg-white.rounded-2xl.p-5,
+html.dark .bg-white.rounded-2xl.p-7 {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+}
+html.dark .bg-gray-50.rounded-xl {
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
+}
+html.dark .bg-gray-50.border {
+  background-color: #0f172a !important;
+  border-color: #475569 !important;
+}
+html.dark .bg-white.text-gray-600 {
+  background-color: #0f172a !important;
+  color: #94a3b8 !important;
+}
+html.dark .bg-gray-100.text-gray-400 {
+  background-color: #0f172a !important;
+  color: #475569 !important;
+}
+html.dark .bg-green-50  { background-color: rgba(21, 128, 61, 0.15) !important; }
+html.dark .bg-blue-50   { background-color: rgba(37, 99, 235, 0.15) !important; }
+html.dark .bg-violet-50 { background-color: rgba(109, 40, 217, 0.15) !important; }
+
+/* ── 11. MY APPOINTMENTS ─────────────────────────────────── */
+html.dark .bg-white.rounded-2xl.border.border-gray-200 {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+}
+html.dark .bg-indigo-100.border.border-indigo-600 { background-color: rgba(55, 48, 163, 0.2) !important; }
+html.dark .bg-violet-100.border.border-violet-600 { background-color: rgba(109, 40, 217, 0.15) !important; }
+html.dark .bg-green-100.border   { background-color: rgba(21, 128, 61, 0.15) !important; }
+html.dark .bg-emerald-100.border { background-color: rgba(6, 95, 70, 0.15) !important; }
+html.dark .bg-red-100.border     { background-color: rgba(185, 28, 28, 0.15) !important; }
+html.dark .bg-teal-100.border    { background-color: rgba(17, 94, 89, 0.15) !important; }
+html.dark .border.border-gray-600.text-gray-700 {
+  border-color: #475569 !important;
+  color: #94a3b8 !important;
+}
+html.dark .border.border-gray-500 { border-color: #475569 !important; }
+
+/* ── 12. PRESCRIPTION MODAL ──────────────────────────────── */
+html.dark .bg-white.rounded-2xl.shadow-2xl { background-color: #1e293b !important; }
+html.dark .rounded-xl.border.border-gray-600 { border-color: #475569 !important; }
+html.dark .grid.bg-gray-200 { background-color: #0f172a !important; }
+html.dark .bg-white.last\:border-b-0 { background-color: #1e293b !important; }
+html.dark .bg-gray-100\/50 { background-color: rgba(15, 23, 42, 0.5) !important; }
+html.dark .bg-amber-100.border.border-amber-600 { background-color: rgba(120, 53, 15, 0.2) !important; }
+html.dark .border-t.border-gray-400.bg-white {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+}
+html.dark .bg-gray-100.cursor-pointer { background-color: #0f172a !important; }
+
+/* ── 13. MY PROFILE ──────────────────────────────────────── */
+html.dark .bg-white.rounded-2xl.p-6,
+html.dark .bg-white.rounded-2xl.p-7 { background-color: #1e293b !important; }
+html.dark .border.border-gray-600.shadow-\[0_2px_16px_rgba\(99\,102\,241\,0\.07\)\] {
+  border-color: #334155 !important;
+  background-color: #1e293b !important;
+}
+html.dark .flex-1.h-px.bg-gradient-to-r.from-gray-600 { opacity: 0.4; }
+html.dark .bg-indigo-50\/50 { background-color: #0f172a !important; }
+html.dark select.bg-indigo-50\/50 {
+  background-color: #0f172a !important;
+  color: #e2e8f0 !important;
+}
+html.dark .bg-indigo-100.border.border-indigo-500 { background-color: rgba(55, 48, 163, 0.15) !important; }
+html.dark .bg-white.rounded-2xl.shadow-2xl.w-full.max-w-sm { background-color: #1e293b !important; }
+html.dark .bg-red-100.border.border-red-600 { background-color: rgba(185, 28, 28, 0.15) !important; }
+html.dark .bg-gray-100.text-gray-800 {
+  background-color: #0f172a !important;
+  color: #e2e8f0 !important;
+}
+
+/* ── 14. AUTH / LOGIN / SIGNUP ───────────────────────────── */
+html.dark .bg-white.rounded-\[30px\] { background-color: #1e293b !important; }
+html.dark .absolute.top-0.left-0.bg-white { background-color: #1e293b !important; }
+html.dark .bg-white.px-6.py-8 { background-color: #1e293b !important; }
+html.dark .bg-gray-100.border.border-gray-600 {
+  background-color: #0f172a !important;
+  border-color: #475569 !important;
+  color: #e2e8f0 !important;
+}
+html.dark input.bg-gray-100 {
+  background-color: #0f172a !important;
+  color: #e2e8f0 !important;
+}
+html.dark input::placeholder   { color: #64748b !important; }
+html.dark textarea::placeholder { color: #64748b !important; }
+html.dark .bg-white.text-gray-900 {
+  background-color: #0f172a !important;
+  color: #e2e8f0 !important;
+  border-color: #475569 !important;
+}
+html.dark .hover\:bg-gray-200:hover { background-color: #334155 !important; }
+html.dark .flex-1.h-px.bg-gray-400 { background-color: #475569 !important; }
+
+/* ── 15. FORGOT PASSWORD ─────────────────────────────────── */
+html.dark .fp-card {
+  background: #1e293b !important;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4) !important;
+}
+html.dark .fp-section { background: transparent !important; }
+html.dark .fp-card input {
+  background: #0f172a !important;
+  color: #e2e8f0 !important;
+  border-color: #475569 !important;
+}
+html.dark .fp-card input:focus {
+  border-color: #818cf8 !important;
+  background: #0f172a !important;
+}
+html.dark .fp-card input::placeholder { color: #64748b !important; }
+html.dark .fp-card div[style*="background: #f5f3ff"] { background: #1e1b4b !important; }
+
+/* ── 16. PAYMENT SUCCESS ─────────────────────────────────── */
+html.dark .bg-white.rounded-2xl.border.border-gray-200.shadow-md {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+}
+html.dark .bg-gray-50.rounded-xl.border-2.border-gray-200 {
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
+}
+html.dark .h-\[1\.5px\].bg-gray-300 { background-color: #334155 !important; }
+html.dark .border-2.border-indigo-300 {
+  border-color: #4338ca !important;
+  color: #818cf8 !important;
+}
+
+/* ── 17. VERIFY PAGE ─────────────────────────────────────── */
+html.dark .bg-white.rounded-2xl.border.border-gray-100 {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+}
+html.dark .bg-indigo-50.border-2.border-indigo-100 {
+  background-color: rgba(55, 48, 163, 0.2) !important;
+  border-color: #4338ca !important;
+}
+
+/* ── 18. ABOUT PAGE ──────────────────────────────────────── */
+html.dark .why-card {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3) !important;
+}
+html.dark .why-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4) !important;
+  border-color: #4338ca !important;
+}
+html.dark .why-card h3 { color: #f1f5f9 !important; }
+html.dark .why-card p  { color: #94a3b8 !important; }
+html.dark .why-card > div:first-child { border-color: #334155 !important; }
+
+html.dark .commit-card {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3) !important;
+}
+html.dark .commit-card:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4) !important;
+  border-color: #4338ca !important;
+}
+html.dark .commit-card h3 { color: #f1f5f9 !important; }
+html.dark .commit-card p  { color: #94a3b8 !important; }
+html.dark .commit-icon {
+  background: #0f172a !important;
+  border-color: #334155 !important;
+}
+
+:is(html.dark) .mission-grid > div {
+  background: #1e293b !important;
+  border-color: #475569 !important;
+}
+:is(html.dark) .mission-grid > div p  { color: #94a3b8 !important; }
+:is(html.dark) .mission-grid > div h3 { color: #f1f5f9 !important; }
+
+:is(html.dark) section[style*="rgba(238,242,255"] {
+  background-color: #1e293b !important;
+  background: #1e293b !important;
+}
+
+html.dark .stat-icon-ring {
+  background: #1e293b !important;
+  border-color: #475569 !important;
+}
+
+/* Why Choose Us section */
+.why-choose-section {
+  background: rgba(238, 242, 255, 0.45);
+}
+html.dark .why-choose-section {
+  background: #1e293b !important;
+}
+html.dark .why-card {
+  background: #0f172a !important;
+  border-color: #334155 !important;
+}
+
+/* ── 19. CONTACT — Info cards only (form handled in Contact.jsx) ── */
+html.dark .contact-info-card {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.3) !important;
+}
+html.dark .contact-info-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* ── 20. SPECIALITY MENU CARDS ───────────────────────────── */
+html.dark .from-indigo-100.to-blue-50   { --tw-gradient-from: rgba(49, 46, 129, 0.3);  --tw-gradient-to: rgba(30, 27, 75, 0.3); }
+html.dark .from-violet-100.to-purple-50 { --tw-gradient-from: rgba(76, 29, 149, 0.3);  --tw-gradient-to: rgba(46, 16, 101, 0.3); }
+html.dark .from-pink-100.to-rose-50     { --tw-gradient-from: rgba(131, 24, 67, 0.3);  --tw-gradient-to: rgba(76, 5, 25, 0.3); }
+html.dark .from-sky-100.to-cyan-50      { --tw-gradient-from: rgba(12, 74, 110, 0.3);  --tw-gradient-to: rgba(8, 51, 68, 0.3); }
+html.dark .from-emerald-100.to-green-50 { --tw-gradient-from: rgba(6, 78, 59, 0.3);    --tw-gradient-to: rgba(5, 46, 22, 0.3); }
+html.dark .from-amber-100.to-yellow-50  { --tw-gradient-from: rgba(120, 53, 15, 0.3);  --tw-gradient-to: rgba(66, 32, 6, 0.3); }
+
+html.dark .border-indigo-200  { border-color: rgba(99, 102, 241, 0.3) !important; }
+html.dark .border-violet-200  { border-color: rgba(139, 92, 246, 0.3) !important; }
+html.dark .border-pink-200    { border-color: rgba(236, 72, 153, 0.3) !important; }
+html.dark .border-sky-200     { border-color: rgba(56, 189, 248, 0.3) !important; }
+html.dark .border-emerald-200 { border-color: rgba(52, 211, 153, 0.3) !important; }
+html.dark .border-amber-200   { border-color: rgba(251, 191, 36, 0.3) !important; }
+
+html.dark .bg-indigo-100.border-2 { background-color: rgba(49, 46, 129, 0.3) !important; }
+html.dark .bg-violet-100           { background-color: rgba(76, 29, 149, 0.2) !important; }
+html.dark .bg-pink-100             { background-color: rgba(131, 24, 67, 0.2) !important; }
+html.dark .bg-sky-100              { background-color: rgba(12, 74, 110, 0.2) !important; }
+html.dark .bg-emerald-100          { background-color: rgba(6, 78, 59, 0.2) !important; }
+html.dark .bg-amber-100            { background-color: rgba(120, 53, 15, 0.2) !important; }
+
+html.dark .text-indigo-700  { color: #a5b4fc !important; }
+html.dark .text-violet-700  { color: #c4b5fd !important; }
+html.dark .text-pink-700    { color: #f9a8d4 !important; }
+html.dark .text-sky-700     { color: #7dd3fc !important; }
+html.dark .text-emerald-700 { color: #6ee7b7 !important; }
+html.dark .text-amber-700   { color: #fcd34d !important; }
+
+/* ── 21. GLOBAL INPUT / TEXTAREA ─────────────────────────── */
+html.dark input,
+html.dark textarea,
+html.dark select {
+  background-color: #0f172a !important;
+  color: #e2e8f0 !important;
+  border-color: #475569 !important;
+}
+html.dark input:focus,
+html.dark textarea:focus,
+html.dark select:focus {
+  border-color: #818cf8 !important;
+  background-color: #0f172a !important;
+}
+
+/* ── 22. MISC ────────────────────────────────────────────── */
+html.dark .text-sm.text-gray-900   { color: #e2e8f0 !important; }
+html.dark .text-xs.text-gray-800   { color: #94a3b8 !important; }
+html.dark .text-gray-400.text-base { color: #475569 !important; }
+html.dark .text-gray-500.text-sm   { color: #475569 !important; }
+html.dark .rounded-lg.overflow-hidden.border { filter: brightness(0.75) contrast(1.1); }
+html.dark button.text-sm.text-indigo-600 { color: #818cf8 !important; }
+html.dark .h-1.bg-gradient-to-r { opacity: 0.8; }
+
+/* ── 23. MOBILE NAVBAR ───────────────────────────────────── */
+@media (max-width: 768px) {
+  html.dark .fixed.top-0.right-0.bg-white\/97 {
+    background-color: rgba(15, 23, 42, 0.99) !important;
+  }
+  html.dark nav a.text-gray-700 { color: #cbd5e1 !important; }
+  html.dark nav a.border-transparent { color: #cbd5e1 !important; }
+
+  /* Close (×) button had no dark override */
+  html.dark .bg-gray-300 { background-color: #334155 !important; }
+
+  /* Active nav item uses bg-indigo-200/60 (opacity variant) */
+  html.dark .bg-indigo-200\/60 {
+    background-color: rgba(49, 46, 129, 0.3) !important;
+  }
+
+  /* Nav hover uses bg-indigo-200/40 (opacity variant) */
+  html.dark .hover\:bg-indigo-200\/40:hover {
+    background-color: rgba(49, 46, 129, 0.2) !important;
+  }
+}
